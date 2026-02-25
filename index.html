@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Citation Revolution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #111;
+            color: white;
+            text-align: center;
+            font-family: Arial;
+            padding-top: 40%;
+        }
+        button {
+            padding: 15px;
+            font-size: 18px;
+            background: crimson;
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2 id="citation">Clique sur le bouton 🔥</h2>
+<button onclick="newCitation()">Nouvelle Citation</button>
+
+<script>
+let citations = [
+"Le savoir est une arme.",
+"L’Afrique se lève.",
+"Le changement commence par toi.",
+"Travaille en silence.",
+"Discipline = Réussite.","La révolution africaine commence dans l’esprit avant de se voir dans les rues.",
+"Un Mali conscient est plus puissant qu’une armée sans vision.",
+"L’Afrique ne mendie pas son avenir, elle le construit.",
+"Chaque génération a sa bataille, la nôtre est celle de la souveraineté.",
+"La liberté n’est pas donnée, elle se conquiert avec courage.",
+"Le Mali debout inspire toute l’Afrique.",
+"Le changement commence quand le peuple refuse la peur.",
+"Une Afrique unie est une force que personne ne peut briser.",
+"La jeunesse malienne est la clé du renouveau.",
+"Un peuple éveillé ne peut plus être manipulé.",
+"La révolution commence par la discipline personnelle.",
+"L’Afrique doit croire en elle-même avant que le monde y croie.",
+"Le Mali avance quand ses enfants travaillent ensemble.",
+"La souveraineté est une responsabilité, pas un slogan.",
+"Chaque citoyen est un acteur du changement.",
+"La conscience est l’arme la plus puissante d’un peuple.",
+"L’Afrique écrit une nouvelle page de son histoire.",
+"Le Mali fort repose sur un peuple uni.",
+"La révolution est d’abord mentale.",
+"La dignité africaine n’est pas négociable.",
+"Un pays grandit quand son peuple s’éduque.",
+"La liberté exige des sacrifices.",
+"Le Mali nouveau naît du courage collectif.",
+"L’Afrique n’est pas pauvre, elle est riche de son potentiel.",
+"La jeunesse est la flamme de la transformation.",
+"Un esprit libre construit une nation libre.",
+"Le changement durable commence par l’action.",
+"La solidarité africaine est notre force.",
+"Le Mali souverain est un Mali responsable.",
+"La révolution est un engagement quotidien.",
+"L’unité transforme les faiblesses en puissance.",
+"Chaque voix compte dans la construction nationale.",
+"L’Afrique mérite respect et autodétermination.",
+"Un peuple informé est un peuple invincible.",
+"La transformation commence par la vérité.",
+"Le Mali avance quand la jeunesse s’engage.",
+"La liberté sans discipline mène au chaos.",
+"L’Afrique debout ne pliera plus.",
+"Le courage collectif change l’histoire.",
+"La révolution est un éveil de conscience.",
+"Un Mali stable repose sur la justice.",
+"La dignité nationale est une priorité.",
+"L’Afrique forge son destin par le travail.",
+"Le progrès vient de l’unité.",
+"Une nation forte protège sa souveraineté.",
+"Le Mali écrit son avenir avec détermination.",
+"La révolution est une vision partagée.",
+"L’éducation est la base du renouveau africain.",
+"Un peuple uni ne tombe jamais longtemps.",
+"Le changement est une décision collective."
+];
+
+function newCitation(){
+    let randomIndex = Math.floor(Math.random() * citations.length);
+    document.getElementById("citation").innerText = citations[randomIndex];
+}
+</script>
+
+</body>
+</html>
